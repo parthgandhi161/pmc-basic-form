@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic From</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <script src="index.js"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous"
+  />
+  <body>
+    <div class="container">
+      <div class="section1">
+        <div id="title">
+          <h1>Contact Information</h1>
+          <p>Fill up from and our team will reach out to you in 24 hours</p>
+        </div>
+        <div class="info"><i class="fas fa-phone-alt"></i> +91 99999 78787</div>
+        <div class="info"><i class="fas fa-envelope"></i> abcdefg@abc.com</div>
+        <div class="info">
+          &nbsp;<i class="fas fa-map-marker-alt"></i> 81 Foregate Street, london
+        </div>
+        <div class="social">
+          <a href="#" class="fab fa-facebook"></a>
+          <a href="#" class="fab fa-instagram"></a>
+          <a href="#" class="fab fa-twitter"></a>
+          <a href="#" class="fab fa-linkedin-in"></a>
+        </div>
+      </div>
+
+      <!-- section 2 -->
+
+      <div class="section2">
+        <div id="name">
+          <div class="fn">
+            <label class="lable" for="fn">First Name</label><br />
+            <input
+              type="text"
+              name="fn"
+              id="fn"
+              class="inputfield"
+              size="30"
+              placeholder="First Name"
+            />
+          </div>
+          <div class="ln">
+            <label class="lable" for="ln">Last Name</label><br />
+            <input
+              type="text"
+              class="inputfield"
+              name="ln"
+              id="ln"
+              size="30"
+              placeholder="Last Name"
+            />
+          </div>
+        </div>
+        <div id="detail">
+          <div class="em">
+            <label class="lable" for="email">Email</label><br />
+            <input
+              type="email"
+              name="email"
+              id="em"
+              class="inputfield"
+              size="30"
+              placeholder="Email"
+            />
+          </div>
+          <div class="no">
+            <label class="lable" for="phone">Phone</label><br />
+            <input
+              type="tel"
+              name="phone"
+              size="30"
+              id="no"
+              class="inputfield"
+              placeholder="Phone"
+            />
+          </div>
+        </div>
+        <div id="checkbox">
+          <h3 class="lable h3">Which services you are looking for?</h3>
+          <input
+            type="checkbox"
+            id="c1"
+            class="checkbox-round"
+            name="web design"
+          />
+          <label class="lable1" for="web design">Web Design</label>
+          <input type="checkbox" id="c2" name="web development" />
+          <label class="lable1" for="web development">Web Development</label>
+          <input type="checkbox" id="c3" name="card design" />
+          <label class="lable1" for="card design">Card Design</label>
+          <input type="checkbox" id="c4" name="logo design" />
+          <label class="lable1" for="logo design">Logo Design</label>
+        </div>
+        <div id="message">
+          <label class="lable" for="message">Message</label><br />
+          <textarea
+            name="message"
+            class="inputfield"
+            cols="80"
+            id="messa"
+            rows="4"
+            placeholder="Write your message..."
+          ></textarea>
+        </div>
+        <div id="submit">
+          <button class="subbtn" onclick="showpopup()">Send Message</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- popup -->
+
+    <div id="overlay" class="overlay">
+      <div class="popcontainer">
+        <div id="closebtn">
+          <i class="cbn fas fa-times fa-lg" onclick="closepopup()"></i>
+        </div>
+        <div class="popcontent">
+          <div id="icon">
+            <i id="iicon" class="fas fa-4x"></i>
+            <!--fa-check-circle-->
+          </div>
+          <h3 id="mes">
+            <!-- Dear Parth Gandhi, Our Team will contact you in next 24 hours phone
+            nos. lenght should be 10 <br />
+            email address is not valid <br />
+            please select atleast one service. -->
+          </h3>
+          <button id="btn" class="btn" onclick="closepopup()"></button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -2,7 +2,7 @@
 
 ## ScreenShots
 
-<img src="./img/screenshots/ui.png" alt="UI">
+<img src="./img/screenshots/UI.png" alt="UI">
 
 <img src="./img/screenshots/success.png" alt="success">
 
